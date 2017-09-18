@@ -1,5 +1,3 @@
-FROM NODE
-WORKDIR /app
-COPY . /app
-CMD node index.html
+FROM nginx:alpine
+COPY . /usr/share/nginx/html
 EXPOSE 1440
